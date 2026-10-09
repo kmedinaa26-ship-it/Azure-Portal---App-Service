@@ -28,7 +28,7 @@ siguiendo la convención de nombres definida por el maestro (ver [docs/nomenclat
 | 2 | Log Analytics Workspace | `log-utvt-integradora-dev-mxc-001` | Mexico Central | Completado |
 | 3 | Application Insights | `appi-utvt-integradora-dev-mxc-001` | Basado en el workspace del paso 2 | Completado |
 | 4 | App Service Plan | `asp-utvt-integradora-dev-mxc-001` | Plan Free F1 | Completado |
-| 5 | Web App | `app-utvt-integradora-web-dev-mxc-001` | Código, Node 24 LTS, plan del paso 4 | Completado |
+| 5 | Web App | `app-utvt-integradora-web-dev-mxc-km001` | Código, Node 24 LTS, plan del paso 4 | Completado |
 | 6 | Vinculación Web App + Application Insights | `appi-utvt-integradora-dev-mxc-001` | Monitoring > Application Insights | Pendiente |
 
 ## Estructura del repositorio
