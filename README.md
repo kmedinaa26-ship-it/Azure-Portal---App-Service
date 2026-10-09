@@ -22,24 +22,25 @@ siguiendo la convención de nombres definida por el maestro (ver [docs/nomenclat
 
 ## Recursos y avance
 
-| # | Recurso | Nombre | Evidencia | Estado |
+| # | Recurso | Nombre | Configuración clave | Estado |
 |---|---|---|---|---|
-| 1 | Resource Group | `rg-utvt-integradora-dev-mxc-001` | `evidencias/01-*` | Pendiente |
-| 2 | Log Analytics Workspace | `log-utvt-integradora-dev-mxc-001` | `evidencias/02-*` | Pendiente |
-| 3 | Application Insights | `appi-utvt-integradora-dev-mxc-001` | `evidencias/03-*` | Pendiente |
-| 4 | App Service Plan (F1) | `asp-utvt-integradora-dev-mxc-001` | `evidencias/04-*` | Pendiente |
-| 5 | Web App (Node 24 LTS) | `app-utvt-integradora-web-dev-mxc-001` | `evidencias/05-*` | Pendiente |
-| 6 | Web App + Application Insights | vinculación | `evidencias/06-*` | Pendiente |
+| 1 | Resource Group | `rg-utvt-integradora-dev-mxc-001` | Mexico Central, 3 etiquetas | Pendiente |
+| 2 | Log Analytics Workspace | `log-utvt-integradora-dev-mxc-001` | Mexico Central | Pendiente |
+| 3 | Application Insights | `appi-utvt-integradora-dev-mxc-001` | Basado en el workspace del paso 2 | Pendiente |
+| 4 | App Service Plan | `asp-utvt-integradora-dev-mxc-001` | Plan Free F1 | Pendiente |
+| 5 | Web App | `app-utvt-integradora-web-dev-mxc-001` | Código, Node 24 LTS, plan del paso 4 | Pendiente |
+| 6 | Vinculación Web App + Application Insights | `appi-utvt-integradora-dev-mxc-001` | Monitoring > Application Insights | Pendiente |
 
 ## Estructura del repositorio
 
 ```
 .
 ├── README.md          # Descripción del laboratorio y avance
-├── docs/              # Documentación (nomenclatura de recursos)
-└── evidencias/        # Capturas de pantalla de cada paso
+└── docs/
+    └── nomenclatura.md  # Convención de nombres por ambiente
 ```
 
 ## Historial
 
-Cada paso del laboratorio se registra en un commit independiente, con su evidencia.
+Cada paso del laboratorio se registra en un commit independiente que actualiza el estado
+del recurso en la tabla anterior. Las capturas de pantalla se entregan en el reporte de evidencias (Word).
